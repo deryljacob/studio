@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2021",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "compileOnSave": true,
+  "include": [
+    "firebase-functions.ts",
+    "src/lib/functions/**/*.ts",
+    "src/lib/types.ts",
+    "src/lib/firebase-admin.ts",
+    "src/lib/server-config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
